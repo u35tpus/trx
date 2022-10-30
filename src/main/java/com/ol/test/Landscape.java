@@ -7,7 +7,7 @@ public class Landscape {
     private int tankHeight = 0;
     private int tankLength = 0;
 
-    private final static int LIMIT = 32_000;
+    public final static int LIMIT = 32_000;
 
     public Landscape(int[] heights) {
         this.heights = heights;
