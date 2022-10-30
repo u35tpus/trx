@@ -16,6 +16,11 @@ public class Landscape {
     public void tightAndFill() {
         int i = 0;
 
+        if (heights.length > LIMIT) {
+            valid = false;
+            return;
+        }
+
         for (int l = 0; l < heights.length ; l++) {
             if (heights[l] < 0 || heights[l] > LIMIT) {
                 valid = false;
