@@ -20,7 +20,17 @@ public class AppTest {
 
         tests.add(new TestDatum(new int[]{5, 2, 3, 4, 5, 4, 0, 3, 1}, true, 9, "task"));
 
+        int[] h = new int[Landscape.LIMIT + 1];
+        tests.add(new TestDatum(h, false, 0, "test len Limit"));
+
         tests.stream().forEach(e -> runTest(e));
+    }
+
+
+    @Test
+    public void testForLen(){
+        int[] heights = new int[Landscape.LIMIT+1];
+
     }
 
     @Test
