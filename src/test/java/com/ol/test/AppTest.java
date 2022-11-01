@@ -26,16 +26,9 @@ public class AppTest {
         tests.stream().forEach(e -> runTest(e));
     }
 
-
-    @Test
-    public void testForLen(){
-        int[] heights = new int[Landscape.LIMIT+1];
-
-    }
-
     @Test
     public void runResourceTests() {
-        int valids = 2;
+        int valids = 4;
         int invalids = 2;
 
         List<TestDatum> tests = new ArrayList<>();
@@ -115,8 +108,6 @@ public class AppTest {
         Assert.assertEquals(testDatum.isValid(), landscape.isValid());
 
         if (landscape.isValid()) {
-            landscape.spill();
-
             int cnt = landscape.calcWater();
             Assert.assertEquals(testDatum.getAmountWater(), cnt);
         }
