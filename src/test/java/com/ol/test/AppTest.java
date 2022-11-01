@@ -25,13 +25,7 @@ public class AppTest {
 
         tests.stream().forEach(e -> runTest(e));
     }
-
-
-    @Test
-    public void testForLen(){
-        int[] heights = new int[Landscape.LIMIT+1];
-
-    }
+    
 
     @Test
     public void runResourceTests() {
